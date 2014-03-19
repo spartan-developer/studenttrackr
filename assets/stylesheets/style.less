@@ -14,7 +14,9 @@ body {
 }
 
 body {
-  .make-row();
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  .make-row(@gutter: 0px);
   #stats + hr {
     margin-top: 0;
     margin-bottom: 0;
@@ -65,48 +67,16 @@ div#opener {
 
 #student-list-layout {
   section#dropdowns {
-     padding-right: 16px;
-     padding-left: 16px;
-     #action-dropdown-region { float: left; margin: 8px 0px; }
-     #sort-dropdown-region { margin: 8px; float: right; }
-     #display-dropdown-region { margin: 8px; float: right; }
-  }
-  div#student-list-region {
     .make-sm-column(12);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    #action-dropdown-region  { float: left;  }
+    #sort-dropdown-region    { float: right; margin-right: 8px; }
+    #display-dropdown-region { float: right; }
+    .dropdown li { cursor: pointer; }
   }
-}
-@media (min-width: @screen-md-min) {
   div#student-list-region {
-    padding-left: 0px !important;
-  }
-}
-
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-
-  .template {
-    background-color: @yellow;
-  }
-
-  .helper {
-    border:1px solid @blue;
-  }
-
-  .styled {
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-
-    margin-top: 100px;
-    position: absolute;
-  }
-}
-
-.dropdown {
-  li {
-    cursor: pointer;
+    .make-sm-column(12, @gutter: 0px);
   }
 }
 
