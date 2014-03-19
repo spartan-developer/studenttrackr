@@ -65,13 +65,19 @@ div#opener {
 
 #student-list-layout {
   section#dropdowns {
-     padding-right: 7px;
-     #action-dropdown-region { float: left; margin: 8px }
+     padding-right: 16px;
+     padding-left: 16px;
+     #action-dropdown-region { float: left; margin: 8px 0px; }
      #sort-dropdown-region { margin: 8px; float: right; }
      #display-dropdown-region { margin: 8px; float: right; }
   }
   div#student-list-region {
     .make-sm-column(12);
+  }
+}
+@media (min-width: @screen-md-min) {
+  div#student-list-region {
+    padding-left: 0px !important;
   }
 }
 
