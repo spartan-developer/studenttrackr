@@ -1,0 +1,16 @@
+.totals
+  = numStudents
+  &nbsp;
+  span.hidden-sm Total&nbsp;
+  | Students
+
+table(style="width:100%;margin-left:0%")
+  tr
+    td(style="text-align:center")
+      div.total-circle.at-risk
+        .count= atRisk
+        .level AT RISK
+    td(style="text-align:center")
+      div.total-circle.thriving
+        .count= thriving
+        .level THRIVING

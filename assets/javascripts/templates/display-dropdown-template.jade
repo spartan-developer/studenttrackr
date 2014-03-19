@@ -1,0 +1,9 @@
+button.btn.btn-default.dropdown-toggle(data-toggle="dropdown")
+  | Display&nbsp;
+  span.caret
+ul.dropdown-menu
+  for attribute in ['Progress', 'Mastery', 'Attendance', 'Achievement', 'Compliance']
+    li
+      a
+        input(type="checkbox", checked=isSelected(attribute), value="#{attribute.toLowerCase()}")
+        = attribute

@@ -1,0 +1,9 @@
+table.table
+  thead
+    tr(style="background-color:#EEE")
+      th
+        input(type="checkbox")
+      th Student Name
+      for attribute in attributesToDisplay
+        th= attribute.capitalize()
+  tbody

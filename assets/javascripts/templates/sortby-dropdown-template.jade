@@ -1,0 +1,7 @@
+button.btn.btn-default.dropdown-toggle(data-toggle="dropdown")
+  | Sort by&nbsp;
+  span.caret
+ul.dropdown-menu
+  for sortableField in sortableFields
+    li
+      a(data-sort="#{sortableField.attribute}")= sortableField.label

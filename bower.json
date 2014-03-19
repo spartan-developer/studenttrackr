@@ -1,0 +1,14 @@
+{
+  "name": "student-trackr",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "2.0.3",
+    "requirejs": "2.1.8",
+    "marionette": "~1.6.4",
+    "chance": "~0.5.4",
+    "backbone.localstorage": "~1.1.7",
+    "bootstrap": "~3.1.1",
+    "lodash": "~2.4.1",
+    "underscore.string": "~2.3.3"
+  }
+}

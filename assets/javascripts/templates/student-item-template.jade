@@ -1,0 +1,12 @@
+td
+  input(type="checkbox")
+td
+  a(href="/#students/#{id}")
+    = firstName
+    &nbsp;
+    strong= lastName
+for attribute in attributes
+  td.score(class=attribute.level)
+    i.sign.fa
+    = Math.abs(attribute.score)
+    | %

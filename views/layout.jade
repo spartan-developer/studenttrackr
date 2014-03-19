@@ -1,0 +1,27 @@
+doctype 5
+html
+  head
+    title Mimosa
+    link(rel='stylesheet', href='/stylesheets/vendor/fontawesome/css/font-awesome.css' + cachebust)
+    link(rel='stylesheet', href='/stylesheets/style.css' + cachebust)
+
+    if reload
+      script(src='/socket.io/socket.io.js')
+      script(src='/javascripts/reload-client.js')
+
+    if optimize
+      script(src='/javascripts/main-built.js')
+    else
+      script(src='/javascripts/vendor/requirejs/require.js', data-main='/javascripts/main.js')
+
+  body
+    div#opener
+      i.fa.fa-caret-right
+    section#stats
+      section#totals-region
+      hr
+      section#charts-region
+      div#closer.visible-md
+        i.fa.fa-caret-left
+    hr.col-sm-10.col-sm-offset-1.visible-sm
+    section#student-list-region

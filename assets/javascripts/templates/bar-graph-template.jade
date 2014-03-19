@@ -1,0 +1,7 @@
+.bar-graph-title= title
+.container-fluid
+  for count in counts
+    .bar-graph-row
+      .count= count.number
+      .bar-container
+        .bar(class=count.level, style="width: #{100*count.number/maxScore}%") &nbsp;
