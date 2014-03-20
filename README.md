@@ -1,7 +1,7 @@
 studenttrackr
 =============
 
-Programming Assessment for k12
+Responsive page for tablet and pc built with backbone and bootstrap
 
 ## Instructions
 
